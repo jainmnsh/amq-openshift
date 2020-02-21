@@ -44,6 +44,5 @@ under the License.
 
     <modules>
         <module>batch-input</module>
-        <module>batch-processor</module>
     </modules>
 </project>
