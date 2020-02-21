@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc47a2e-8f28-4093-9a12-bcabf767b261" name="Default Changelist" comment="" />
+    <list default="true" id="dbc47a2e-8f28-4093-9a12-bcabf767b261" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +16,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -109,6 +114,7 @@
       <workItem from="1580248032243" duration="1783000" />
       <workItem from="1580825707398" duration="21000" />
       <workItem from="1582302202646" duration="873000" />
+      <workItem from="1582304912370" duration="26000" />
     </task>
     <servers />
   </component>
