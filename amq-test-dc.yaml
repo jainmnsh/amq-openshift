@@ -1,0 +1,76 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  annotations:
+    openshift.io/generated-by: OpenShiftWebConsole
+  creationTimestamp: null
+  generation: 7
+  labels:
+    app: amq-test
+  name: amq-test
+spec:
+  replicas: 1
+  selector:
+    deploymentconfig: amq-test
+  strategy:
+    activeDeadlineSeconds: 21600
+    resources: {}
+    rollingParams:
+      intervalSeconds: 1
+      maxSurge: 25%
+      maxUnavailable: 25%
+      timeoutSeconds: 600
+      updatePeriodSeconds: 1
+    type: Rolling
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: amq-test
+        deploymentconfig: amq-test
+    spec:
+      containers:
+      - env:
+        - name: JAVA_MAIN_CLASS
+          value: org.apache.activemq.artemis.jms.example.AMQPQueueExample
+        - name: JAVA_TOOL_OPTIONS
+          value: -Djavax.net.ssl.trustStore=new-non-prod.pkcs12 -Djavax.net.ssl.trustStoreType=PKCS12
+            -Djavax.net.ssl.trustStorePassword=changepass
+        image: 172.30.238.118:5000/hello-network/amq-test@sha256:8eb0bcca9146b180eacf521fb1dd37ae769fdda68df2d431ff3d63c2be0333ce
+        imagePullPolicy: Always
+        name: amq-test
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        - containerPort: 8443
+          protocol: TCP
+        - containerPort: 8778
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+  test: false
+  triggers:
+  - imageChangeParams:
+      automatic: true
+      containerNames:
+      - amq-test
+      from:
+        kind: ImageStreamTag
+        name: amq-test:latest
+        namespace: hello-network
+      lastTriggeredImage: 172.30.238.118:5000/hello-network/amq-test@sha256:8eb0bcca9146b180eacf521fb1dd37ae769fdda68df2d431ff3d63c2be0333ce
+    type: ImageChange
+  - type: ConfigChange
+status:
+  availableReplicas: 0
+  latestVersion: 0
+  observedGeneration: 0
+  replicas: 0
+  unavailableReplicas: 0
+  updatedReplicas: 0

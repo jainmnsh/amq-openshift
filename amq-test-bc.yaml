@@ -1,0 +1,45 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  annotations:
+    openshift.io/generated-by: OpenShiftWebConsole
+  creationTimestamp: null
+  labels:
+    app: amq-test
+  name: amq-test
+spec:
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: amq-test:latest
+  postCommit: {}
+  resources: {}
+  runPolicy: Serial
+  source:
+    git:
+      ref: master
+      uri: https://github.com/jainmnsh/amq-openshift.git
+    type: Git
+  strategy:
+    sourceStrategy:
+      env:
+      - name: ARTIFACT_DIR
+        value: batch-input/target
+      from:
+        kind: ImageStreamTag
+        name: java:8
+        namespace: openshift
+    type: Source
+  triggers:
+  - imageChange: {}
+    type: ImageChange
+  - type: ConfigChange
+  - generic:
+      secret: 77d41925d3518997
+    type: Generic
+  - github:
+      secret: ded6210ca1b25352
+    type: GitHub
+status:
+  lastVersion: 0
