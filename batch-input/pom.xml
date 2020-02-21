@@ -31,7 +31,8 @@ under the License.
     <name>ActiveMQ Online Batch Input Example</name>
 
     <properties>
-        <activemq.basedir>${project.basedir}/../../../..</activemq.basedir>
+      <standalone.mainclass>org.apache.activemq.artemis.jms.example.AMQPQueueExample</standalone.mainclass>
+      <relativePath>../</relativePath>
     </properties>
 
     <dependencies>
@@ -73,6 +74,37 @@ under the License.
                         <groupId>com.vladsch.flexmark</groupId>
                         <artifactId>markdown-page-generator-plugin</artifactId>
                     </plugin>
+                  <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.2.0</version>
+                    <configuration>
+                      <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                      </descriptorRefs>
+                    </configuration>
+                    <executions>
+                      <execution>
+                        <id>assemble-all</id>
+                        <phase>package</phase>
+                        <goals>
+                          <goal>single</goal>
+                        </goals>
+                      </execution>
+                    </executions>
+                  </plugin>
+                  <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                      <archive>
+                        <manifest>
+                          <addClasspath>true</addClasspath>
+                          <mainClass>${standalone.mainclass}</mainClass>
+                        </manifest>
+                      </archive>
+                    </configuration>
+                  </plugin>
                 </plugins>
             </build>
         </profile>
