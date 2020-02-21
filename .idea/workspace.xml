@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbc47a2e-8f28-4093-9a12-bcabf767b261" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1TnfLKtmCXwgAwl8hOcMlbsK3nz" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.AMQPQueueExample">
+    <configuration name="AMQPQueueExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.activemq.artemis.jms.example.AMQPQueueExample" />
+      <module name="online-batch-input" />
+      <option name="VM_PARAMETERS" value="-Djavax.net.ssl.trustStore=$PROJECT_DIR$/../new-non-prod.pkcs12 -Djavax.net.ssl.trustStoreType=PKCS12 -Djavax.net.ssl.trustStorePassword=changepass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.activemq.artemis.jms.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AMQPQueueExample_2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.activemq.artemis.jms.example.AMQPQueueExample" />
+      <module name="batch-processor" />
+      <option name="VM_PARAMETERS" value="-Djavax.net.ssl.trustStore=$PROJECT_DIR$/../new-non-prod.pkcs12 -Djavax.net.ssl.trustStoreType=PKCS12 -Djavax.net.ssl.trustStorePassword=changepass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.activemq.artemis.jms.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AMQPQueueExample" />
+      <item itemvalue="Application.AMQPQueueExample_2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AMQPQueueExample" />
+        <item itemvalue="Application.AMQPQueueExample_2" />
+        <item itemvalue="Application.AMQPQueueExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbc47a2e-8f28-4093-9a12-bcabf767b261" name="Default Changelist" comment="" />
+      <created>1574100722916</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574100722916</updated>
+      <workItem from="1574100724301" duration="6595000" />
+      <workItem from="1574200073205" duration="921000" />
+      <workItem from="1574448887206" duration="1506000" />
+      <workItem from="1574452015636" duration="546000" />
+      <workItem from="1574460036938" duration="692000" />
+      <workItem from="1574461261909" duration="822000" />
+      <workItem from="1574711105725" duration="534000" />
+      <workItem from="1575323725859" duration="559000" />
+      <workItem from="1575382304608" duration="1294000" />
+      <workItem from="1575928081303" duration="27000" />
+      <workItem from="1580248032243" duration="1783000" />
+      <workItem from="1580825707398" duration="21000" />
+      <workItem from="1582302202646" duration="873000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="351" y="166" width="1330" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582304447243">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="351" y="166" width="1330" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304447243" />
+    <state x="307" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.972@0.23.1680.972" timestamp="1575382604779" />
+    <state width="1632" height="217" key="GridCell.Tab.0.bottom" timestamp="1582304290252">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="1632" height="217" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304290252" />
+    <state width="1632" height="78" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1575762028133" />
+    <state width="1632" height="217" key="GridCell.Tab.0.center" timestamp="1582304290251">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="1632" height="217" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304290251" />
+    <state width="1632" height="78" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1575762028132" />
+    <state width="1632" height="217" key="GridCell.Tab.0.left" timestamp="1582304290250">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="1632" height="217" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304290250" />
+    <state width="1632" height="78" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1575762028132" />
+    <state width="1632" height="217" key="GridCell.Tab.0.right" timestamp="1582304290251">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="1632" height="217" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304290251" />
+    <state width="1632" height="78" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1575762028133" />
+    <state width="1632" height="217" key="GridCell.Tab.1.bottom" timestamp="1582304266425">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="1632" height="217" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304266425" />
+    <state width="1632" height="78" key="GridCell.Tab.1.bottom/0.23.1680.972@0.23.1680.972" timestamp="1575762028134" />
+    <state width="1632" height="217" key="GridCell.Tab.1.center" timestamp="1582304266424">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="1632" height="217" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304266424" />
+    <state width="1632" height="78" key="GridCell.Tab.1.center/0.23.1680.972@0.23.1680.972" timestamp="1575762028133" />
+    <state width="1632" height="217" key="GridCell.Tab.1.left" timestamp="1582304266424">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="1632" height="217" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304266424" />
+    <state width="1632" height="78" key="GridCell.Tab.1.left/0.23.1680.972@0.23.1680.972" timestamp="1575762028133" />
+    <state width="1632" height="217" key="GridCell.Tab.1.right" timestamp="1582304266425">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state width="1632" height="217" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1920.1002@0.23.1920.1002" timestamp="1582304266425" />
+    <state width="1632" height="78" key="GridCell.Tab.1.right/0.23.1680.972@0.23.1680.972" timestamp="1575762028134" />
+    <state x="507" y="232" width="670" height="676" key="search.everywhere.popup" timestamp="1580825725018">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="507" y="232" width="670" height="676" key="search.everywhere.popup/0.23.1680.972@0.23.1680.972" timestamp="1580825725018" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/batch-processor/src/main/java/org/apache/activemq/artemis/jms/example/AMQPQueueExample.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/batch-input/src/main/java/org/apache/activemq/artemis/jms/example/AMQPQueueExample.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/batch-input/src/main/java/org/apache/activemq/artemis/jms/example/AMQPQueueExample.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/batch-processor/src/main/java/org/apache/activemq/artemis/jms/example/AMQPQueueExample.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/batch-processor/src/main/java/org/apache/activemq/artemis/jms/example/AMQPQueueExample.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
