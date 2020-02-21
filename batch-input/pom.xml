@@ -63,50 +63,27 @@ under the License.
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
             </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>3.2.2</version>
+            <executions>
+              <execution>
+                <phase>package</phase>
+                <goals>
+                  <goal>shade</goal>
+                </goals>
+                <configuration>
+                  <archive>
+                    <manifest>
+                      <addClasspath>true</addClasspath>
+                      <mainClass>org.apache.activemq.artemis.jms.example.AMQPQueueExample</mainClass>
+                    </manifest>
+                  </archive>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
     </build>
-    <profiles>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.vladsch.flexmark</groupId>
-                        <artifactId>markdown-page-generator-plugin</artifactId>
-                    </plugin>
-                  <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.2.0</version>
-                    <configuration>
-                      <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                      </descriptorRefs>
-                    </configuration>
-                    <executions>
-                      <execution>
-                        <id>assemble-all</id>
-                        <phase>package</phase>
-                        <goals>
-                          <goal>single</goal>
-                        </goals>
-                      </execution>
-                    </executions>
-                  </plugin>
-                  <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <configuration>
-                      <archive>
-                        <manifest>
-                          <addClasspath>true</addClasspath>
-                          <mainClass>${standalone.mainclass}</mainClass>
-                        </manifest>
-                      </archive>
-                    </configuration>
-                  </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
