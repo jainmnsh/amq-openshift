@@ -1,0 +1,15 @@
+# Created by buildmetadata-maven-plugin 1.7.0 ( SHA: 6f444cae ) 
+build.artifactId=online-batch-input
+build.groupId=org.apache.activemq.examples.amqp
+build.java.compiler=HotSpot 64-Bit Tiered Compilers
+build.java.runtime.name=Java(TM) SE Runtime Environment
+build.java.runtime.version=1.8.0_92-b14
+build.java.vendor=Oracle Corporation
+build.java.vm=Java HotSpot(TM) 64-Bit Server VM
+build.maven.execution.cmdline=clean install
+build.maven.version=3.6.3
+build.scmRevision.date=21.02.2020
+build.scmRevision.id=b1ac0f9943a1a036eb081ab049bbb4745d745ce2
+build.scmRevision.url=scm\:git\:http\://git-wip-us.apache.org/repos/asf/activemq-artemis.git/artemis-examples/protocols/amq-online-input/online-batch-input
+build.version=2.6.3.redhat-00013
+build.version.full=2.6.3.redhat-00013rb1ac0f9943a1a036eb081ab049bbb4745d745ce2

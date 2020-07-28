@@ -26,10 +26,10 @@ under the License.
         <version>2.6.3.redhat-00013</version>
     </parent>
 
-    <groupId>org.apache.activemq.examples.amqp</groupId>
-    <artifactId>amq-online-input</artifactId>
+    <groupId>com.tke.jmsbridge</groupId>
+    <artifactId>wl-amq-bridge</artifactId>
     <packaging>pom</packaging>
-    <name>ActiveMQ Online Examples</name>
+    <name>WebLogic to AMQ bridge</name>
 
     <!-- Properties -->
     <properties>
@@ -43,6 +43,6 @@ under the License.
     </properties>
 
     <modules>
-        <module>batch-input</module>
+        <module>bridge</module>
     </modules>
 </project>

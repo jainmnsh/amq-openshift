@@ -32,9 +32,9 @@ spec:
       containers:
       - env:
         - name: JAVA_MAIN_CLASS
-          value: org.apache.activemq.artemis.jms.example.AMQPQueueExample
+          value: com.tke.jmsbridge.JMSListener
         - name: JAVA_TOOL_OPTIONS
-          value: -Djavax.net.ssl.trustStore=new-non-prod.pkcs12 -Djavax.net.ssl.trustStoreType=PKCS12
+          value: -Djavax.net.ssl.trustStore=amq.pkcs12 -Djavax.net.ssl.trustStoreType=PKCS12
             -Djavax.net.ssl.trustStorePassword=changepass
         image: 172.30.238.118:5000/hello-network/amq-test@sha256:8eb0bcca9146b180eacf521fb1dd37ae769fdda68df2d431ff3d63c2be0333ce
         imagePullPolicy: Always
