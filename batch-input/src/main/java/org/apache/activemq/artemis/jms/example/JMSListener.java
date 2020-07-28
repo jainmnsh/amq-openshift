@@ -114,8 +114,8 @@ public class JMSListener implements MessageListener {
 //      LOG.warn("amq.properties not found, defaulting to packaged version.");
 //      properties.load(AMQPublisher.class.getResourceAsStream("/amq.properties"));
 //    }
-//    InitialContext ic = getInitialContext("t3://vmohsthyk067.oracleoutsourcing.com:40521");
-    InitialContext ic = getInitialContext("t3://oraclejms.tkeaws.com:40521");
+    InitialContext ic = getInitialContext("t3://vmohsthyk067.oracleoutsourcing.com:40521");
+    //InitialContext ic = getInitialContext("t3://oraclejms.tkeaws.com:40521");
     JMSListener qr = new JMSListener();
     qr.init(ic, QUEUE);
     System.out.println(

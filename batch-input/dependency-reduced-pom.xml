@@ -26,7 +26,7 @@
               <archive>
                 <manifest>
                   <addClasspath>true</addClasspath>
-                  <mainClass>org.apache.activemq.artemis.jms.example.AMQPQueueExample</mainClass>
+                  <mainClass>org.apache.activemq.artemis.jms.example.JMSListener</mainClass>
                 </manifest>
               </archive>
             </configuration>
@@ -35,8 +35,24 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+    <dependency>
+      <groupId>com.oracle.weblogic</groupId>
+      <artifactId>wljmsclient</artifactId>
+      <version>12.2.1.4.0</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/wljmsclient.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.weblogic</groupId>
+      <artifactId>wlthint3client</artifactId>
+      <version>12.2.1.4.0</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/wlthint3client.jar</systemPath>
+    </dependency>
+  </dependencies>
   <properties>
     <relativePath>../</relativePath>
-    <standalone.mainclass>org.apache.activemq.artemis.jms.example.AMQPQueueExample</standalone.mainclass>
+    <standalone.mainclass>org.apache.activemq.artemis.jms.example.JMSListener</standalone.mainclass>
   </properties>
 </project>
